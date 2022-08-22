@@ -1,0 +1,233 @@
+ open a new support request = premier, professional, standard, developer, basic
+basic = professional direct sup = no
+lowest possible cost = basic
+lowest cost 24*7 = no change is needed
+phone or email = basic no 나머지 yes
+currently has basic sup plan = premier
+free account = no
+enterprise agreement = yes
+pay as you go =no
+create an az sup requset = portal
+appropriate cloud deployment solution = saas, paas : no, laas = yes
+paas SQL databases = yes
+Paas installed = no
+paas storage account = yes
+paas machines = no
+paas full control = no
+pass ability to scale = yes
+accessed by external users 
+
+ elastic expenditure model = no
+ scalable = no
+operational = yes
+flexibility = yes
+same monthly cost = no
+paying electricity 는 Opex의 예.
+datacenter = Capex의 예
+ensure that some of the servers are available = fault tolerance
+powerApps portal = no
+powerShell in AZ cloud shell = yes
+
+
+
+
+
+
+
+
+단어 
+   마이그레이션 - 다른 운영환경으로 옮겨가는 과정
+   쿼리 - 웹 서버에 특정한 정보를 보여달라는 웹 클라이언트 요청
+Support Plan
+   - 요금제와 같은것
+   - BASIC - DEVELOPER - STANDARD - PROFESSIONAL DIRECT - PREMIER (EA)
+   - BASIC
+   - STANDARD 
+      - Web이 10개, 로드 밸런싱 STANDARD 
+      - Miami 문제에 나오면 STANDARD
+      - 24시간 전화 이메일 기술지원 가능 ( STANDARD 부터 제공함 )
+      
+   - PREMIER
+      - Microsoft Azure 기술 전문가가 아키텍처 지원을 제공합니다.
+   - Modern Lifecycle Policy
+      - 폐지될 예정이면 12개월 1년전에 공지해야함
+   - PREMIER ONLY EA
+   - MSDN은 모든 고객에게 적용됨
+   - Azure support request -> azure portal 에서
+IAAS, PAAS, SAAS 
+   - IAAS 
+      - Azure VM 은 IAAS
+      - install 나오면 IAAS다
+      - Azure Files 는 IAAS의 예이다
+   - PAAS 
+      - Azure Storage는 PAAS
+      - Azure Cosmos DB 나오면 PAAS
+      - Azure SQL Database , Azure App Service 두개는 대표적 PAAS 솔루션의 예임
+   - SAAS 
+      - 대표적 예 : office 365
+      - 고객은 SAAS에서 application data를 제공함
+      - 애플리케이션 소프트웨어를 제공함
+      - Microsoft Intune SAAS의 예
+      - SAAS 구현할때 SAAS 솔루션을 구성해야함 사용자가
+   - 사용자 지정앱은 SAAS가 될수없음
+   - PAAS는 다중설치 불가
+   - PAAS OS에대한 전체 제어 불가
+   - Microsoft는 장애가 발생한 서버 하드웨어의 교체와 물리적 서버의 보안을 관리하므로 필요하지 않습니다.
+Public Private Cloud
+   Public Cloud - Cloud 서비스
+      - 데이터센터 필요없음
+      - 어느곳에서 누구나 들어갈수있음
+      - Public Cloud 에 물리적 서버를 추가할 수 없음
+      - 장점 
+         - 비용 절감
+         - 유지 관리 불필요
+         - 무제한에 가까운 스케일링 성능
+         - 높은 안정성
+   Private Cloud - On-Premise
+      - 프라이빗 클라우드는 데이터 센터에서 호스팅됩니다
+   Hybrid Cloud
+      - 퍼블릭클라우드 + 프라이빗 클라우드 두개의 조합
+      - 하이브리드 클라우드를 사용하면 두 환경 간에 데이터와 앱을 이동할 수 있습니다.
+      - 하이브리드 클라우드를 생성하려면 리소스를 퍼블릭 클라우드에 배포해야 합니다.
+Preview
+   - Private preview , Public Preview 는 SLA가 적용되지않음
+   - Microsoft는 이 미리 보기(Preview) 기능에 대한 **지원** 을 제공하지 않습니다
+   - 공개 미리 보기의 Azure 서비스는 프로덕션 환경 에서 사용할 수 있다
+   - Private Preview 는 모든사람에게 제공되는건 아님
+   - 하지만 Public Preview 는 모든사람에게 적용이 됨
+   - Public Preview ( 공개 미리보기) 는 정식 버전에 서비스 만큼 제공되지않음
+Opex Capex
+   Opex 
+      - 운영비 매월 지불하는 금액
+      - pay-as-to-go는 opex다
+   Capex 
+      - 장비를 사는 금액
+
+HA ( 재해복구 )
+   geo-clustered sites = read only 이다 외우셈
+   region 안에는 availbility 가 있음
+   data center 문제 - availbilty zone - region 세트
+   availbilty zone은 data center가 fail하기를 막기위해 있음
+   99.9% -> vm : 2 , availbilty zones : 2
+
+azure command
+   chrome 통해서 power shell 가능
+   cloud shell 에서 bash 가능
+
+   power shell script이랑 azure cli랑 다른거임
+
+   power shello core 6.0나오면 답은 no
+
+   명령어 나오는 시험문제는 다 YES
+
+   windows, Linux , MacOs Mojave, Ubunte 세개는 Azure portal , CLI, Power shell 다됨
+   
+   CLI -> CMD, Windows PowerShell
+
+   iPhone -> the Azure portal, Azure Cloud shell
+   
+   powerShell ->  CLI도구는 ㄴㄴ, core6.0 버려
+
+network
+
+   HTTP -> NSG   -> Yes
+   HTTP -> DDOS -> no
+   HTTP -> firewall -> Yes
+   HTTP -> Manger profile ->no
+
+   remote workers 나오면 point-to-site
+   NSG - 같은 네트웍에서만 작동 -> port 친구
+   firewall - 서로 다른 네트웍에서만 작동
+      - firewall 나오고 NAT나오면 NAT가 답
+   VPN 접속하려면 게이트웨이 필요함
+   DDOS는 관문을 공격하는거 Pareameter을 공격하는거
+
+Active Directory
+   - MFA 다양하게 인증할수있는거 Email , phone
+      - administrative and non-administrative user 
+   - Azure Key Vault 금고
+   - policy 나오면 azure policy
+      - policy 는 정책
+   - Authentication 인증
+   - Authorization 권한
+   - anonymous IP address -> Azure AD Identity Protection
+   - token, authenticate 은 active directory 
+   - key valut는 시크릿 크리데이션 인증서 영어로
+   - ios 는 registered 만 가능
+
+Subscription - 구독
+   타넌트 - Management group - Suvscriptions - Resource groups - Resources
+    
+Resource 
+   - compliance 나오면 Management group
+   - azure policy 랑 tags랑 연결할수있음
+   - tag는 상속불가
+   - regulatory 나오면 compliance manager
+azure storage
+   - power BI - Azure SQL Data Warehouse,Azure Data Lake
+   - map 이라는 단어가 나오면 file service임
+   - VM은 죽었어도 Storage비용은 계속 나감
+
+SLA
+   preview 는 SLA를 지원하지않음
+   마이크로 소프트 는 현금으로 안줌 크레딧으로 줌
+
+Sentinal - 보초를 서다
+   - 자동으로 Securit를 보호해주는
+   - autometically, securit, siem 들어가면 sentinel
+   - azure sentinel 나오면 playbook , workbook
+
+Azure Monitor 
+   - notifications -> azure monitor 가 해줌
+   - 모니터에 alert는 가장 큰 기본
+
+azure contry ( 나라별로 azure가 어떻게 관리되는가 )
+   - azure Government는 미국만 가능
+
+AI - 무조건 머신러닝 들어가는게 답
+
+AIP 
+   - AIP로 암호화하는거는 문서랑 이메일
+
+Adivisor - 구체적이지는 않지만 충고해주는것 - best practices
+   - azure Adivisor은 비용이란 단어가 나오면 정답 다 정답은 아님 절대 아님
+
+Trust center - 표준, 규정준수 알려주는것
+   - Compliance 만 아시면 됨 규정 준수
+   - ISO , Compliance, regulation 나오면 Trust center Compliance manager 은 아님 !!!!
+   - 누구나 가서 볼수있음 누구나 사용 가능함
+
+Security center - 보안과 관련됨
+   - Report 규정을 잘 지키고있는지 측정하고 평가해줌
+   - JIT , evaluate나오면 Security center
+   
+Service Health
+   - Help + support 를 누르고 들어감
+   
+Dev Test Labs
+   - 설치했다가 지웠다가 했을때 가장 적합한것
+   - deploy 했다가 remove했다가
+
+1 ETC 
+   - TCO -  calculate cost 나오면 TCO
+   - azure marketplace - 필요한것을 다운로드받는곳
+   - Apache Spark - azure Databricks 임
+   - 소스코드에 버전관리 해주는거 azure repos -> git과 비슷한것
+   - video가 있으먄 - cdn 임
+   - million sensors - azure data lake , azure iot hub
+2 ETC
+   compliance manager - trust portal
+   serverless computing - azure functions
+   Cost Management나오면 전부다 YES
+   compliance 나오면 Management groups
+
+
+   delete lock 하려면 remove해야함
+   Azure Cost Management - EA
+   Public IP 주소 할당하면 돈나옴 그렇데 ㅇㅇ..
+   azure TCO는 누구나 할수있다 anyone
+   
+   insights 찾아주는것
+   ATP - sensors 를 통해 위험을 감지하는거
+   European policy - gdpr
+   public ip는 비용이 증가함
